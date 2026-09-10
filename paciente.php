@@ -1,5 +1,5 @@
 <?php
-require once 'Logavel.php';
+require_once 'Logavel.php';
 
 
 class Paciente {
@@ -27,9 +27,10 @@ class Paciente {
     }
 
     public function atualizarTelefone(string $tele) {
-        $this->registrarLog("Telefone atualizado de $this->tele para $tele.");
+        $oldtele = $this->tele;
         $this->validaTelefone($tele);
         $this->tele = $tele;
+        $this->registrarLog("Telefone atualizado de $oldtele para $tele.");
     }
 
     public function exibirResumo() {
