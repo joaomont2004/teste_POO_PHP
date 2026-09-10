@@ -1,10 +1,22 @@
 <?php
 
 require_once 'funcionario.php';
+require_once 'agendavel.php';
+require_once 'Logavel.php';
 
-class dentista extends funcionario {
+class dentista extends funcionario implements Agendavel {
+    use Logavel;
+
     private int $cro;
     private string $especialidade;
+
+
+
+    public function agendarConsulta(string $data): string {
+        $this->registrarLog("Consulta agendada para o dia $data.");
+        return "Consulta agendada para o dia $data.";
+    }
+
 
     public function __construct(string $nome, string $cpf, string $tele, string $data, string $cargo, float $salario, int $cro, string $especialidade) {
         parent::__construct($nome, $cpf, $tele, $data, $cargo, $salario);

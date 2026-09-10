@@ -1,6 +1,9 @@
 <?php
+require once 'Logavel.php';
+
 
 class Paciente {
+    use Logavel;
 
     private string $nome;
     private int $id;
@@ -24,6 +27,7 @@ class Paciente {
     }
 
     public function atualizarTelefone(string $tele) {
+        $this->registrarLog("Telefone atualizado de $this->tele para $tele.");
         $this->validaTelefone($tele);
         $this->tele = $tele;
     }
