@@ -1,8 +1,6 @@
 <?php
 
-require_once 'funcionario.php';
-require_once 'agendavel.php';
-require_once 'Logavel.php';
+namespace JooGabrielBorgesMon\TestePooPhp;
 
 class dentista extends funcionario implements Agendavel {
     use Logavel;

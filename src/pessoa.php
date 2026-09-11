@@ -1,5 +1,7 @@
 <?php
 
+namespace JooGabrielBorgesMon\TestePooPhp;
+
 class pessoa {
 
     private string $nome;
@@ -17,7 +19,7 @@ class pessoa {
 
     public function validaTelefone(string $tele) {
         if ($tele === "" || (strlen($tele) < 10 || strlen($tele) > 11)) {
-            throw new Exception("Telefone inválido. Deve ter entre 10 e 11 dígitos.");
+            throw new \Exception("Telefone inválido. Deve ter entre 10 e 11 dígitos.");
         }
     }
 

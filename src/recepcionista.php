@@ -1,6 +1,6 @@
 <?php
 
-require_once 'funcionario.php';
+namespace JooGabrielBorgesMon\TestePooPhp;
 
 class recepcionista extends funcionario {
     private string $turno;

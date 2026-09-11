@@ -1,6 +1,6 @@
 <?php
 
-require_once 'pessoa.php';
+namespace JooGabrielBorgesMon\TestePooPhp;
 
 class Funcionario extends pessoa {
     private string $cargo;

@@ -1,6 +1,6 @@
 <?php
 
-require_once 'pacienteexception.php';
+namespace JooGabrielBorgesMon\TestePooPhp\Exceptions;
 
 class nomevazioexception extends pacienteexception {
     public function __construct() {

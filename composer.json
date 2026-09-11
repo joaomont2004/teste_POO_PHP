@@ -1,0 +1,16 @@
+{
+    "name": "joo-gabriel-borges-mon/teste_poo_php",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "JooGabrielBorgesMon\\TestePooPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "João Gabriel Borges Monteiro",
+            "email": "joaomont2004@gmail.com"
+        }
+    ],
+    "require": {}
+}
